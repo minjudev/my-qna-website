@@ -23,7 +23,7 @@
 	          <a class="nav-link" href="form.html">회원가입</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="list.html">사용자 목록</a>
+	          <a class="nav-link" href="list">사용자 목록</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -33,31 +33,21 @@
 	<div class="container">
 		<table class="table">
 		  <thead>
+		  
 		    <tr>
-		      <th scope="col">#</th>
 		      <th scope="col">Name</th>
 		      <th scope="col">Email</th>
 		      <th scope="col">ID</th>
 		    </tr>
 		  </thead>
 		  <tbody>
+		    {{#users}}		    
 		    <tr>
-		      <th scope="row">1</th>
-		      <td>이민주</td>
-		      <td>aamj0226@gmail.com</td>
-		      <td>aamj0226</td>
+		      <td>{{userName}}</td>
+		      <td>{{email}}</td>
+		      <td>{{userId}}</td>
 		    </tr>
-		    <tr>
-		      <th scope="row">2</th>
-		      <td>이민혜</td>
-		      <td>happy0565@naver.com</td>
-		      <td>menee</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">3</th>
-		      <td colspan="2">Larry the Bird</td>
-		      <td>alice</td>
-		    </tr>
+		    {{/users}}		    		    
 		  </tbody>
 		</table>
 	</div>
